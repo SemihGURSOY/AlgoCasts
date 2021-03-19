@@ -20,7 +20,7 @@ function fizzBuzz(n) {
         let output = '';
 
         for (let cond in conditions) {
-            if (i % parseFloat(cond) === 0) output += conditions[cond];
+            if (i % parseInt(cond) === 0) output += conditions[cond];
         }
 
         output = output === '' ? i : output;
